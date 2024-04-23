@@ -13,8 +13,9 @@
         android:theme="@style/Theme.SOLOapp"
         tools:targetApi="31">
         <activity
-            android:name=".Dashboard"
-            android:exported="false" />
+            android:name=".BmrCalculator"
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -23,6 +24,17 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Dashboard"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
     </application>
 
